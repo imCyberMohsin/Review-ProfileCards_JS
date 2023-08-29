@@ -1,3 +1,5 @@
+/*? Review Profile Cards CSS  */
+
 * {
     margin: 0;
     padding: 0;
@@ -78,7 +80,7 @@ body {
 
 .container .Review-cardBox .image-container:hover img {
     transform: scale(1.07);
-    border: 3px solid var(--accent-color);
+    /* border: 3px solid var(--accent-color); */
 }
 
 .container .Review-cardBox .image-container img {
@@ -87,7 +89,6 @@ body {
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
 }
-
 
 .container .Review-cardBox h4 {
     font-size: 1.4vw;
@@ -108,9 +109,10 @@ body {
 
 /*? Buttons CSS */
 .btn-container {
-    width: 5vw;
+    width: 8vw;
     height: 2vw;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 3vw;
@@ -127,9 +129,16 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.btn-container .btn:active {
-    transform: scale(1.05);
-    /* box-shadow: 1px 1px 5px var(--accent-color); */
+.btn-container .btn:active i {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-container .btn:active .fa-chevron-right {
+    transform: translateX(3px);
+}
+
+.btn-container .btn:active .fa-chevron-left {
+    transform: translateX(-3px);
 }
 
 .random-btn {
