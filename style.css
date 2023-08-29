@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --accent-color: #00bfff;
+    --card-bg-color: #ebfaff;
+    --font-color: #232349;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    background-color: white;
+}
+
+.container {
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: crimson; */
+}
+
+.heading {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    /* background-color: aqua; */
+}
+
+.heading h1 {
+    font-size: 2.5vw;
+}
+
+.heading .underline {
+    width: 20%;
+    height: 7%;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+
+/*? Cardbox CSS */
+.container .Review-cardBox {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    row-gap: 0.5vw;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container .Review-cardBox .image-container {
+    background-color: var(--accent-color);
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .Review-cardBox .image-container:hover img {
+    transform: scale(1.07);
+    border: 3px solid var(--accent-color);
+}
+
+.container .Review-cardBox .image-container img {
+    width: 7.7vw;
+    height: 7.7vw;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.container .Review-cardBox h4 {
+    font-size: 1.4vw;
+    color: var(--font-color);
+    letter-spacing: 2px;
+}
+
+.container .Review-cardBox p span {
+    color: var(--accent-color);
+    font-size: 1.1vw;
+}
+
+.container .Review-cardBox p:nth-child(4) {
+    padding: 0 2%;
+    color: var(--font-color);
+}
+
+
+/*? Buttons CSS */
+.btn-container {
+    width: 5vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3vw;
+}
+
+.btn-container .btn {
+    width: 2vw;
+    height: 2vw;
+    font-size: 1.8vw;
+    border: none;
+    background-color: transparent;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-container .btn:active {
+    transform: scale(1.05);
+    /* box-shadow: 1px 1px 5px var(--accent-color); */
+}
+
+.random-btn {
+    width: 7vw;
+    height: 2vw;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: var(--accent-color-light);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.random-btn:active {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 5px var(--accent-color);
+}
+
+
+/*? Media Queries  */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 60%;
+    }
+
+    .container .Review-cardBox {
+        height: 90%;
+    }
+
+    .random-btn {
+        width: 15vw;
+        height: 5vw;
+    }
+}
