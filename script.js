@@ -35,7 +35,28 @@ const reviewCards = [
         name: 'Zaid',
         job: 'Project Manager',
         img: './img/image5.JPG',
-        about: "I'm Zaid,I'm project and event manager, orchestrates seamless experiences. With a keen eye for detail,I can shape ideas into memorable occasions, leaving lasting impressions."
+        about: "I'm Zaid, I'm project and event manager, orchestrates seamless experiences. With a keen eye for detail,I can shape ideas into memorable occasions, leaving lasting impressions."
+    },
+    {
+        id: 6,
+        name: 'Bidisha',
+        job: 'Psychologist',
+        img: './img/image6.jpg',
+        about: "I'm Bidisha, a skilled psychologist, fosters mental well-being. My empathetic counseling illuminates paths through challenges. A dedicated professional positively impacting lives."
+    },
+    {
+        id: 7,
+        name: 'Khushi',
+        job: 'Makeup Artist',
+        img: './img/image7.jpg',
+        about: "I'm Khushi, a skilled makeup artist transforming faces into exquisite canvases. With a creative touch, I can enhances beauty and confidence, making every client glow."
+    },
+    {
+        id: 8,
+        name: 'Preeti',
+        job: 'Skilled Baker',
+        img: './img/image8.png',
+        about: "I'm Preeti, A masterful baker my creations blend flavors and artistry seamlessly. My skillful hands craft edible wonders that enchant taste buds and ignite joy."
     },
 
     // Add more here....
